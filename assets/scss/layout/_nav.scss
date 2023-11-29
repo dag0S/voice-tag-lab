@@ -1,0 +1,8 @@
+.nav {
+  margin-right: 32px;
+  &__list {
+    display: flex;
+    gap: 32px;
+    font-weight: 400;
+  }
+}

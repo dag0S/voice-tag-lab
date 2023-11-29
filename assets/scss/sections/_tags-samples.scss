@@ -1,0 +1,107 @@
+.tags-samples {
+  padding-top: 100px;
+  &__title {
+    margin-bottom: 24px;
+  }
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(388px, 1fr));
+    gap: 32px 30px;
+  }
+  &__grid-item {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    padding: 24px;
+
+    border-radius: 20px;
+    &--child {
+      background: linear-gradient(
+          90deg,
+          rgba(0, 0, 0, 0.9) 55.21%,
+          rgba(0, 0, 0, 0) 76.04%
+        ),
+        url(../img/child.jpg) 88% 50% / cover no-repeat;
+    }
+    &--anime {
+      background: linear-gradient(
+          90deg,
+          rgba(0, 0, 0, 0.9) 55.21%,
+          rgba(0, 0, 0, 0) 76.04%
+        ),
+        url(../img/anime.jpg) 88% 50% / cover no-repeat;
+    }
+    &--woman {
+      background: linear-gradient(
+          90deg,
+          rgba(0, 0, 0, 0.9) 54.69%,
+          rgba(0, 0, 0, 0) 75%
+        ),
+        url(../img/woman.jpg) 88% 50% / cover no-repeat;
+    }
+    &--man {
+      background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0) 29.69%,
+          rgba(0, 0, 0, 0.2) 57.81%,
+          rgba(0, 0, 0, 0.7) 74.48%,
+          #000 100%
+        ),
+        linear-gradient(
+          90deg,
+          rgba(0, 0, 0, 0.9) 53.12%,
+          rgba(0, 0, 0, 0) 72.92%
+        ),
+        url(../img/man.jpg) 88% 50% / cover no-repeat;
+    }
+  }
+  &__grid-item-title {
+    font-size: 18px;
+    font-weight: 700;
+  }
+  &__grid-item-wrapper-rus {
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(22px);
+    padding: 16px 14px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    max-width: 286px;
+  }
+}
+
+.voice-tag {
+  padding: 6px 16px 6px 8px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(25px);
+  max-width: 258px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &--51deg {
+      background: linear-gradient(51deg, #0958fa 13.86%, #09fa32 93.66%);
+    }
+    &--240deg {
+      background: linear-gradient(240deg, #0958fa 13.86%, #09fa32 93.66%);
+    }
+    &--135deg {
+      background: linear-gradient(135deg, #0958fa 13.86%, #09fa32 93.66%);
+    }
+  }
+}

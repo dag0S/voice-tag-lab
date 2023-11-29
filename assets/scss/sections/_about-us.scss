@@ -1,0 +1,40 @@
+.about-us {
+  padding-top: 100px;
+  &__inner {
+    padding: 32px 40px;
+    margin: 0 -42px;
+    border-radius: 40px;
+    background: linear-gradient(
+      51deg,
+      rgba(9, 88, 250, 0.05) 13.86%,
+      rgba(9, 250, 50, 0.05) 93.66%
+    );
+  }
+  &__title {
+    margin-bottom: 24px;
+  }
+}
+
+.advantages {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  gap: 30px;
+  &__item-wrapper-img {
+    overflow: hidden;
+    border-radius: 20px;
+    max-height: 131px;
+    margin-bottom: 10px;
+    img {
+      width: 100%;
+      transition: all 0.2s ease-in;
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+  &__item-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 4px;
+  }
+}
