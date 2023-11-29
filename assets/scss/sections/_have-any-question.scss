@@ -29,9 +29,29 @@
 
       margin-bottom: 8px;
     }
+    input {
+      background: transparent;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 16px;
+      line-height: 1.5;
+
+      padding: 0 29px 5px 5px;
+    }
+  }
+  &__form-clear {
+    position: absolute;
+    top: 25px;
+    right: 5px;
   }
   &__form-row {
     display: flex;
     flex-direction: column;
+    position: relative;
+  }
+  &__btn {
+    align-self: start;
+    margin-top: 27px;
   }
 }
