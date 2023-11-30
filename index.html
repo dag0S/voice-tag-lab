@@ -12,7 +12,197 @@
     />
   </head>
   <body>
-    <div class="wrapper">
+    <div class="modal">
+      <div class="modal__inner">
+        <div class="modal__header">
+          <h4 class="modal__title">Заполните форму</h4>
+          <button>
+            <img src="./assets/img/close-modal.svg" alt="close" />
+          </button>
+        </div>
+        <form class="modal__form">
+          <div class="modal__form-row">
+            <p class="modal__form-text">*Сколько войс тэгов ты хочешь?</p>
+            <div class="modal__form-wrapper">
+              <div class="modal__form-radio-btn">
+                <input id="tag-1" type="radio" name="radio" value="1" checked />
+                <label for="tag-1">1 Тэг</label>
+              </div>
+              <div class="modal__form-radio-btn">
+                <input id="tag-2" type="radio" name="radio" value="2" />
+                <label for="tag-2">2 Тэга</label>
+              </div>
+              <div class="modal__form-radio-btn">
+                <input id="tag-3" type="radio" name="radio" value="3" />
+                <label for="tag-3">3 Тэга</label>
+              </div>
+              <div class="modal__form-radio-btn">
+                <input id="tag-4" type="radio" name="radio" value="4" />
+                <label for="tag-4">4 Тэга</label>
+              </div>
+            </div>
+          </div>
+          <div class="modal__form-row">
+            <p class="modal__form-text">*Выбери голос(а)</p>
+            <div class="modal__form-wrapper">
+              <div class="modal__voice-btn modal__voice-btn--active">
+                <button>-</button>
+                <p>Мужской</p>
+                <button>+</button>
+              </div>
+              <div class="modal__voice-btn">
+                <button>-</button>
+                <p>Женский</p>
+                <button>+</button>
+              </div>
+              <div class="modal__voice-btn">
+                <button>-</button>
+                <p>Аниме</p>
+                <button>+</button>
+              </div>
+              <div class="modal__voice-btn">
+                <button>-</button>
+                <p>Детский</p>
+                <button>+</button>
+              </div>
+            </div>
+          </div>
+          <div class="modal__form-row">
+            <p class="modal__form-text">*Что ты хочешь слышать в своём тэге?</p>
+            <div class="modal__input-row">
+              <input
+                type="text"
+                placeholder="Введи фразу для тэга или несколько (через запятые)"
+              />
+              <button>
+                <img src="./assets/img/clear-form-gray.svg" alt="clear" />
+              </button>
+            </div>
+          </div>
+          <div class="modal__form-row">
+            <p class="modal__form-text">Твои пожелания</p>
+            <div class="modal__input-row">
+              <input
+                type="text"
+                placeholder="Любые детали, такие как, настроение, эффекты и т.д."
+              />
+              <button>
+                <img src="./assets/img/clear-form-gray.svg" alt="clear" />
+              </button>
+            </div>
+          </div>
+          <div class="modal__form-row">
+            <p class="modal__form-text">*Почта</p>
+            <div class="modal__input-row">
+              <input
+                type="email"
+                placeholder="Введи свою почту, на которую мы отправим заказ"
+              />
+              <button>
+                <img src="./assets/img/clear-form-gray.svg" alt="clear" />
+              </button>
+            </div>
+          </div>
+          <div class="modal__form-row">
+            <p class="modal__form-text">Способ оплаты</p>
+            <div class="modal__form-wrapper">
+              <div class="modal__form-radio-btn modal__form-radio-btn--payment">
+                <input
+                  id="PayPal"
+                  type="radio"
+                  name="radio"
+                  value="PayPal"
+                  checked
+                />
+                <label for="PayPal"
+                  >PayPal <img src="./assets/img/PayPal.svg" alt="PayPal"
+                /></label>
+              </div>
+              <div class="modal__form-radio-btn modal__form-radio-btn--payment">
+                <input id="Card" type="radio" name="radio" value="Card" />
+                <label for="Card"
+                  >Card<img src="./assets/img/Card-1.svg" alt="visa" />
+                  <img src="./assets/img/Card-2.svg" alt="master card"
+                /></label>
+              </div>
+              <div class="modal__form-radio-btn modal__form-radio-btn--payment">
+                <input
+                  id="Steam items"
+                  type="radio"
+                  name="radio"
+                  value="Steam items"
+                />
+                <label for="Steam items"
+                  >Steam items <img src="./assets/img/steam.svg" alt="steam"
+                /></label>
+              </div>
+              <div class="modal__form-radio-btn modal__form-radio-btn--payment">
+                <input id="Crypto" type="radio" name="radio" value="Crypto" />
+                <label for="Crypto"
+                  >Crypto <img src="./assets/img/Crypto.svg" alt="Crypto"
+                /></label>
+              </div>
+              <div class="modal__form-radio-btn modal__form-radio-btn--payment">
+                <input
+                  id="YooMoney"
+                  type="radio"
+                  name="radio"
+                  value="YooMoney"
+                />
+                <label for="YooMoney"
+                  >YooMoney <img src="./assets/img/YooMoney.svg" alt="YooMoney"
+                /></label>
+              </div>
+              <div class="modal__form-radio-btn modal__form-radio-btn--payment">
+                <input
+                  id="Perfect Money"
+                  type="radio"
+                  name="radio"
+                  value="Perfect Money"
+                />
+                <label for="Perfect Money"
+                  >PerfectMoney
+                  <img src="./assets/img/PerfectMoney.svg" alt="PerfectMoney"
+                /></label>
+              </div>
+              <div class="modal__form-radio-btn modal__form-radio-btn--payment">
+                <input id="Payeer" type="radio" name="radio" value="Payeer" />
+                <label for="Payeer"
+                  >Payeer <img src="./assets/img/Payeer.svg" alt="Payeer"
+                /></label>
+              </div>
+            </div>
+          </div>
+          <div class="modal__form-row">
+            <p class="modal__form-text">Есть промо код?</p>
+            <div class="modal__input-row">
+              <input
+                type="text"
+                placeholder="Введи промо код, если он у тебя есть"
+              />
+              <button>
+                <img src="./assets/img/clear-form-gray.svg" alt="clear" />
+              </button>
+            </div>
+          </div>
+        </form>
+        <div class="modal__footer">
+          <div class="modal__price">
+            <p class="modal__price-text">Цена</p>
+            <div class="modal__price-main">
+              $19
+              <p>
+                <span class="modal__price-sub">90</span
+                ><span class="modal__price-old">$31 </span>
+              </p>
+            </div>
+          </div>
+          <button class="btn modal__btn">Получить войс тэг</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrapper" style="display: none">
       <header class="header">
         <div class="container">
           <div class="header__inner">
