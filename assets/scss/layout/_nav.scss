@@ -5,4 +5,10 @@
     gap: 32px;
     font-weight: 400;
   }
+  &__item {
+    transition: color 0.2s ease-out;
+    &:hover {
+      color: #ffffff50;
+    }
+  }
 }

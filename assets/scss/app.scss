@@ -1,7 +1,6 @@
 // Abstracts
 @import './abstracts/vars';
 @import './abstracts/mixins';
-@import './abstracts/animations';
 // Core
 @import './core/reset';
 @import './core/base';
@@ -10,8 +9,8 @@
 @import './components/title';
 @import './components/modal';
 // Layout
-@import './layout/header';
 @import './layout/nav';
+@import './layout/header';
 @import './layout/footer';
 // Sections
 @import './sections/promo';

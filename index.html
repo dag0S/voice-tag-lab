@@ -12,12 +12,13 @@
     />
   </head>
   <body>
-    <div class="modal">
+    <div class="overlay hidden"></div>
+    <div class="modal hidden">
       <div class="container">
         <div class="modal__inner">
           <div class="modal__header">
             <h4 class="modal__title">Заполните форму</h4>
-            <button>
+            <button class="btn-close-modal">
               <img src="./assets/img/close-modal.svg" alt="close" />
             </button>
           </div>
@@ -227,20 +228,32 @@
       </div>
     </div>
 
-    <div class="wrapper" >
+    <div class="wrapper">
       <header class="header">
         <div class="container">
           <div class="header__inner">
             <img src="./assets/img/logo.svg" alt="logo" />
             <div class="header__wrapper">
-              <nav class="nav">
+              <nav class="nav header__nav">
                 <ul class="nav__list">
-                  <li class="nav__item"><a href="#">О нас</a></li>
-                  <li class="nav__item"><a href="#">Примеры</a></li>
-                  <li class="nav__item"><a href="#">Цены</a></li>
-                  <li class="nav__item"><a href="#">Отзывы</a></li>
-                  <li class="nav__item"><a href="#">FAQ</a></li>
-                  <li class="nav__item"><a href="#">Связаться</a></li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="#about-us">О нас</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="#samples">Примеры</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="#pricing">Цены</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="#reviews">Отзывы</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="#faq">FAQ</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="#form">Связаться</a>
+                  </li>
                 </ul>
               </nav>
               <img
@@ -248,7 +261,12 @@
                 src="./assets/img/chats.svg"
                 alt="chats"
               />
-              <button class="header__btn">Получить тэг</button>
+              <button class="header__btn btn-open-modal">Получить тэг</button>
+              <button class="header__burger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
             </div>
           </div>
         </div>
@@ -268,7 +286,7 @@
                 команда готова изготовить его именно для тебя. Выбирай любой из
                 наших голосов, и выделяйся!
               </p>
-              <button class="btn">Получить войс тэг</button>
+              <button class="btn btn-open-modal">Получить войс тэг</button>
             </div>
           </div>
         </section>
@@ -307,7 +325,7 @@
           </div>
         </section>
 
-        <section class="about-us">
+        <section class="about-us" id="about-us">
           <div class="container">
             <div class="about-us__inner">
               <h2 class="about-us__title title">О нас</h2>
@@ -382,7 +400,7 @@
           </div>
         </section>
 
-        <section class="tags-samples">
+        <section class="tags-samples" id="samples">
           <div class="container">
             <h2 class="tags-samples__title title">Примеры</h2>
             <div class="tags-samples__grid">
@@ -513,13 +531,13 @@
           </div>
         </section>
 
-        <section class="pricing">
+        <section class="pricing" id="pricing">
           <div class="container">
             <div class="pricing__inner">
               <!-- Начало таблицы -->
               <div class="pricing__grid">
                 <!-- 1 строка -->
-                <h2 class="title">Цены</h2>
+                <h2 class="pricing__title title">Цены</h2>
                 <p class="pricing__item-tag">Тэг 1</p>
                 <p class="pricing__item-tag">Тэг 2</p>
                 <p class="pricing__item-tag">Тэг 3</p>
@@ -600,12 +618,12 @@
                 </div>
               </div>
               <!-- Конец таблицы -->
-              <button class="btn">Получить войс тэг</button>
+              <button class="btn btn-open-modal">Получить войс тэг</button>
             </div>
           </div>
         </section>
 
-        <section class="reviews">
+        <section class="reviews" id="reviews">
           <div class="container">
             <h2 class="reviews__title title">Отзывы</h2>
             <div class="reviews__list">
@@ -755,7 +773,7 @@
           </div>
         </section>
 
-        <section class="faq">
+        <section class="faq" id="faq">
           <div class="container">
             <h2 class="faq__title title">FAQ</h2>
             <div class="faq__inner">
@@ -886,7 +904,7 @@
           </div>
         </section>
 
-        <section class="have-any-question">
+        <section class="have-any-question" id="form">
           <div class="container">
             <div class="have-any-question__inner">
               <div class="have-any-question__wrapper">
@@ -929,15 +947,27 @@
       <footer class="footer">
         <div class="container">
           <div class="footer__top-wrapper">
-            <img src="./assets/img/logo.svg" alt="logo" />
+            <img class="footer__logo" src="./assets/img/logo.svg" alt="logo" />
             <nav class="footer__nav nav">
               <ul class="nav__list">
-                <li class="nav__item"><a href="#">О нас</a></li>
-                <li class="nav__item"><a href="#">Примеры</a></li>
-                <li class="nav__item"><a href="#">Цены</a></li>
-                <li class="nav__item"><a href="#">Отзывы</a></li>
-                <li class="nav__item"><a href="#">FAQ</a></li>
-                <li class="nav__item"><a href="#">Связаться</a></li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#about-us">О нас</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#samples">Примеры</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#pricing">Цены</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#reviews">Отзывы</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#faq">FAQ</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#form">Связаться</a>
+                </li>
               </ul>
             </nav>
             <div class="footer__icon-wrapper">

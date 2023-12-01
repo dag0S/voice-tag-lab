@@ -1,5 +1,8 @@
 .reviews {
   padding-top: 100px;
+  @include mediaPhone {
+    padding-top: 40px;
+  }
   &__title {
     margin-bottom: 28px;
   }

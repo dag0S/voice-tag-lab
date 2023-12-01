@@ -1,5 +1,8 @@
 .pricing {
   padding-top: 32px;
+  @include mediaPhone {
+    padding-top: 40px;
+  }
   &__inner {
     border-radius: 20px;
     background: rgba(255, 255, 255, 0.05);
@@ -7,6 +10,9 @@
     margin: 0 auto;
     max-width: 804px;
     text-align: center;
+    @include mediaPhone {
+      padding: 16px 10px;
+    }
   }
   &__grid {
     display: grid;
@@ -16,6 +22,15 @@
     gap: 16px;
 
     margin-bottom: 16px;
+    @include mediaPhone {
+      grid-template-columns: 100px repeat(4, 1fr);
+      gap: 8px;
+    }
+  }
+  &__title {
+    @include mediaPhone {
+      font-size: 18px;
+    }
   }
   &__item-tag {
     font-weight: 700;
@@ -25,12 +40,19 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    @include mediaPhone {
+      padding: 13px 0;
+      font-size: 12px;
+    }
   }
   &__item-voice {
     padding: 8px 12px;
     border-radius: 10px;
     background: rgba(0, 0, 0, 0.4);
     text-align: left;
+    @include mediaPhone {
+      font-size: 12px;
+    }
   }
   &__item-voice-title {
     font-weight: 700;
@@ -41,7 +63,8 @@
   &__item-price {
     border-radius: 10px;
     background: #000;
-    padding: 9px 34px;
+    padding: 9px 0;
+    user-select: none;
     &:hover {
       border: 1px solid transparent;
       background: linear-gradient(87deg, #0958fa 13.86%, #09fa32 93.66%);
@@ -49,15 +72,28 @@
       background-size: 101%;
       background-position: left -1px top 0px;
     }
+    @include mediaPhone {
+      height: 60%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
   }
   &__item-price-old {
     color: rgba(255, 255, 255, 0.5);
     font-size: 12px;
     font-weight: 700;
     text-decoration-line: line-through;
+    @include mediaSmallPhone {
+      font-size: 10px;
+    }
   }
-  &__item-price-old {
+  &__item-price-new {
     font-weight: 700;
+    @include mediaSmallPhone {
+      font-size: 11px;
+    }
   }
   &__item-empty {
     background: #0000004d;

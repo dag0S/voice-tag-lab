@@ -1,5 +1,8 @@
 .about-us {
   padding-top: 100px;
+  @include mediaPhone {
+    padding-top: 40px;
+  }
   &__inner {
     padding: 32px 40px;
     margin: 0 -42px;
@@ -9,6 +12,12 @@
       rgba(9, 88, 250, 0.05) 13.86%,
       rgba(9, 250, 50, 0.05) 93.66%
     );
+    @include mediaLaptop {
+      margin: 0;
+    }
+    @include mediaPhone {
+      padding: 24px;
+    }
   }
   &__title {
     margin-bottom: 24px;
@@ -19,6 +28,9 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
   gap: 30px;
+  @include mediaPhone {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
   &__item-wrapper-img {
     overflow: hidden;
     border-radius: 20px;

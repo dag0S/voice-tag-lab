@@ -9,6 +9,9 @@
     backdrop-filter: blur(32px);
     padding: 21px 40px;
     border-radius: 20px;
+    @include mediaPhone {
+      padding: 24px;
+    }
   }
   &__title {
     font-size: 24px;
@@ -19,6 +22,9 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(332px, 1fr));
     gap: 24px 80px;
+    @include mediaPhone {
+      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    }
   }
   &__item {
     background: url('../img/marker.svg');

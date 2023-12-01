@@ -1,12 +1,18 @@
 .tags-samples {
   padding-top: 100px;
+  @include mediaPhone {
+    padding-top: 40px;
+  }
   &__title {
     margin-bottom: 24px;
   }
   &__grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(388px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(344px, 1fr));
     gap: 32px 30px;
+    @include mediaPhone {
+      gap: 16px;
+    }
   }
   &__grid-item {
     display: flex;

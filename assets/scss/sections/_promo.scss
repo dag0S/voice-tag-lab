@@ -5,15 +5,27 @@
       rgba(16, 20, 30, 0.51) 89.58%,
       #10141e 100%
     ),
-    url('../img/bg-promo.jpg') center center / cover no-repeat;
+    url('../img/bg-promo.jpg') right center / cover no-repeat;
   height: 655px;
+  @include mediaPhone {
+    height: 533px;
+    background-position: 85% 50%;
+    margin-bottom: 315px;
+  }
   &__inner {
     padding-top: 160px;
+    @include mediaPhone {
+      padding-top: 476px;
+    }
   }
   &__title {
     font-size: 80px;
     font-weight: 500;
     margin-bottom: 8px;
+    @include mediaPhone {
+      font-size: 72px;
+      margin-bottom: 16px;
+    }
   }
   &__sub-title {
     font-size: 24px;
@@ -25,10 +37,20 @@
     padding: 3px 5px;
     margin: 0 -5px;
     margin-bottom: 8px;
+    @include mediaPhone {
+      font-size: 18px;
+      background: transparent;
+      margin: 0;
+      padding: 0;
+      margin-bottom: 16px;
+    }
   }
   &__text {
     width: 373px;
     margin-bottom: 60px;
     line-height: 1.4;
+    @include mediaPhone {
+      margin-bottom: 32px;
+    }
   }
 }
