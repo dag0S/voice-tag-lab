@@ -86,3 +86,14 @@ const headerObserver = new IntersectionObserver(getStickyHeader, {
 });
 
 headerObserver.observe(promo);
+
+// Modal help
+
+const modalHelp = document.querySelector('.header__help');
+const btnOpenHelp = document.querySelector('.header__chats');
+
+btnOpenHelp.addEventListener('click', e => {
+  e.preventDefault();
+
+  modalHelp.classList.toggle('header__help--active');
+});

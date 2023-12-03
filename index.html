@@ -4,6 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Voice Tag Lab</title>
+    <meta
+      name="description"
+      content="Войс тэг - это незаменимая вещь для каждого битмейкера. И наша
+    команда готова изготовить его именно для тебя. Выбирай любой из
+    наших голосов, и выделяйся!"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/img/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/img/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/img/favicon/site.webmanifest" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -256,11 +280,40 @@
                   </li>
                 </ul>
               </nav>
-              <img
-                class="header__chats"
-                src="./assets/img/chats.svg"
-                alt="chats"
-              />
+              <button class="header__chats">
+                <img src="./assets/img/chats.svg" alt="chats" />
+              </button>
+              <div class="header__help">
+                <a href="tg://resolve?domain=@voicetaglab" target="_blank">
+                  <div class="header__help-wrapper">
+                    <img
+                      class="header__help-icon"
+                      src="./assets/img/telegram.svg"
+                      alt="telegram"
+                    />
+                    <div class="header__help-text-wrapper">
+                      <p class="header__help-app">Telegram</p>
+                      <p class="header__help-id">@voicetaglab</p>
+                    </div>
+                  </div>
+                  <img src="./assets/img/arrow-right.svg" alt="arrow" />
+                </a>
+                <div class="header__help-line"></div>
+                <a href="https://wa.me/+1484263465" target="_blank">
+                  <div class="header__help-wrapper">
+                    <img
+                      class="header__help-icon"
+                      src="./assets/img/whatsapp.svg"
+                      alt="whatsapp"
+                    />
+                    <div class="header__help-text-wrapper">
+                      <p class="header__help-app">WhatsApp</p>
+                      <p class="header__help-id">+1 (484) 263-465</p>
+                    </div>
+                  </div>
+                  <img src="./assets/img/arrow-right.svg" alt="arrow" />
+                </a>
+              </div>
               <button class="header__btn btn-open-modal">Получить тэг</button>
               <button class="header__burger-menu">
                 <span></span>
